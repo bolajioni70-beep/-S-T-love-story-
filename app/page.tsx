@@ -21,6 +21,7 @@ export default function Home() {
       <GiftSection />
       <RSVPForm />
       <ClosingSection />
+import CongratulationsSection from "@/components/CongratulationsSection";
     </EnvelopeGate>
   );
 }
