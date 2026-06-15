@@ -8,12 +8,7 @@ import LocationSection from "@/components/LocationSection";
 import GiftSection from "@/components/GiftSection";
 import RSVPForm from "@/components/RSVPForm";
 import ClosingSection from "@/components/ClosingSection";
-import CongratulationsSection from "@/components/CongratulationsSection";
 
-// Add it after RSVPForm:
-<RSVPForm />
-<CongratulationsSection />
-<ClosingSection />
 export default function Home() {
   return (
     <EnvelopeGate>
