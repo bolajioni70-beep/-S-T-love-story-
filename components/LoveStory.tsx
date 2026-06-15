@@ -8,14 +8,17 @@ export default function LoveStory() {
       <div className="relative z-10 max-w-3xl w-full text-center fade-in-section">
         <p className="font-script text-3xl md:text-5xl gold-text mb-2">Our Story</p>
         <div className="w-24 h-px bg-gold mx-auto mb-8" />
-
-        <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-10 rounded-full overflow-hidden border-4 border-gold shadow-2xl">
-          <Image
-            src={loveStory.image}
-            alt={`${couple.brideNickname} and ${couple.groomNickname}`}
-            fill
-            className="object-cover"
-            sizes="256px"
+        <div className="relative w-56 h-56 md:w-72 md:h-72 mx-auto mb-10 rounded-full overflow-hidden shadow-2xl"
+  style={{ border: "3px solid #d4af37", boxShadow: "0 0 0 6px #4A0E1E, 0 0 0 8px #d4af37" }}>
+  <Image
+    src={loveStory.image}
+    alt={`${couple.brideNickname} and ${couple.groomNickname}`}
+    fill
+    className="object-cover object-top"
+    sizes="(max-width: 768px) 224px, 288px"
+    priority
+  />
+</div>
           />
         </div>
 
